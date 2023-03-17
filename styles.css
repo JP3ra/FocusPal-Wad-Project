@@ -1,0 +1,610 @@
+*{
+    transition: .5s;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: initial !important;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B0c10;
+    color: #66fcf1;
+}
+
+.brand-title {
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    transition: .5s;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #66fcf1;
+    padding: 1rem;
+}
+
+.navbar-links li a:hover {
+    color: #0B0c10;
+}
+
+.navbar-links li:hover {
+    background-color: #c5c6c7;
+    transition: .5s;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #c5c6c7;
+    border-radius: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+span{
+    color: white;
+}
+
+
+/* Main body CSS Starts */
+
+.heading{
+    color:#66fcf1;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.info{
+    color: #c5c6c7;
+    font-size: 18px;
+}
+
+/* Box 1 CSS */
+.firstBox{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.firstBox #firstBoxContent{
+    padding-left: 5%;
+    width: 50%;
+    background-color: #1f2833;
+}
+
+.firstBox #firstBoxImg{
+    width: 50%;
+}
+
+.firstBox #firstBoxImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.firstBox a button {
+    width: 150px;
+    background-color: #1f2833;
+    color: #66fcf1;
+    font-size: 15px;
+    height: 45px;
+    font-family: 'DM Sans', sans-serif;
+    border: 1px solid #66fcf1;
+    transition: .5s;
+}
+
+
+.firstBox button:hover {
+    background-color: #66fcf1;
+    color: #0B0c10;
+    transition: .5s;
+}
+
+.firstBox a {
+    margin-left: 10%;
+    font-weight: 800;
+    position: relative;
+    top: 25px;
+    text-decoration: none;
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Seconf Box CSS */
+.secondBox{
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    background-color: #c5c6c7;
+}
+
+.secondBox .heading{
+    color: #0B0c10;
+}
+
+.secondBox .info{
+    color: #1f2833;
+}
+
+.secondBox #secondBoxImg{
+    width: 50%;
+    height: 100%;
+}
+
+.secondBox #secondBoxContent{
+    padding-left: 7%;
+    width: 50%;
+    height: 100%;
+}
+
+
+.secondBox #secondBoxImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.secondBox a button {
+    width: 150px;
+    background-color: #c5c6c7;
+    color: #1f2833;
+    font-size: 15px;
+    height: 45px;
+    font-family: 'DM Sans', sans-serif;
+    border: 1px solid #1f2833;
+    transition: .5s;
+}
+
+
+.secondBox button:hover {
+    background-color: #1f2833;
+    color: #c5c6c7;
+    transition: .5s;
+}
+
+.secondBox a {
+    font-weight: 800;
+    position: relative;
+    top: 25px;
+    text-decoration: none;
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Third Box CSS */
+
+.thirdBox{
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1f2833;
+}
+
+.thirdBox .heading{
+    color: #66fcf1;
+}
+
+.thirdBox .info{
+    color: #c5c6c7;
+}
+
+.thirdBox #thirdBoxImg{
+    width: 50%;
+    height: 100%;
+}
+
+.thirdBox #thirdBoxContent{
+    padding-left: 5%;
+    width: 50%;
+    height: 100%;
+}
+
+
+.thirdBox #thirdBoxImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.thirdBox a button {
+    width: 170px;
+    background-color: #1f2833;
+    color: #66fcf1;
+    font-size: 15px;
+    height: 45px;
+    font-family: 'DM Sans', sans-serif;
+    border: 1px solid #66fcf1;
+    transition: .5s;
+}
+
+
+.thirdBox button:hover {
+    background-color: #66fcf1;
+    color: #1f2833;
+    transition: .5s;
+}
+
+.thirdBox a {
+    font-weight: 800;
+    position: relative;
+    top: 25px;
+    text-decoration: none;
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* Fourth Box CSS */
+
+.fourthBox{
+    height: 530px;
+    display: flex;
+    flex-direction: row;
+    background-color: #c5c6c7;
+}
+
+.fourthBox .heading{
+    color: #0B0c10;
+}
+
+.fourthBox .info{
+    color: #1f2833;
+}
+
+.fourthBox #fourthBoxImg{
+    width: 50%;
+    height: 100%;
+}
+
+.fourthBox #fourthBoxContent{
+    padding-left: 5%;
+    width: 50%;
+    height: 100%;
+}
+
+
+.fourthBox #fourthBoxImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.fourthBox a button {
+    width: 170px;
+    background-color:#c5c6c7;
+    color: #0B0c10;
+    font-size: 15px;
+    height: 45px;
+    font-family: 'DM Sans', sans-serif;
+    border: 1px solid #0B0c10;
+    transition: .5s;
+}
+
+
+.fourthBox button:hover {
+    background-color: #0B0c10;
+    color: #c5c6c7;
+    transition: .5s;
+}
+
+.fourthBox a {
+    font-weight: 800;
+    position: relative;
+    top: 45px;
+    text-decoration: none;
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+}
+
+@media (max-width: 1120px){
+    *{
+        transition: .5s;
+    }
+    .heading{
+        font-size: 50px;
+    }
+
+    .info{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    *{
+        transition: .5s;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .heading{
+        font-size: 60px;
+    }
+
+    .info{
+        font-size: 18px;
+    }
+    /* First box media query CSS */
+
+    .firstBox{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .firstBox #firstBoxContent{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    .firstBox #firstBoxImg{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Second box media queries */
+    .secondBox{
+        display: flex;
+        flex-direction: column;
+        height: 1400px;
+    }
+
+    .secondBox #secondBoxContent{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    .secondBox #secondBoxImg{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Third box media queries  */
+    .thirdBox{
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+    }
+
+    .thirdBox #thirdBoxContent{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    .thirdBox #thirdBoxImg{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Fourth box media queries */
+
+    .fourthBox{
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+    }
+
+    .fourthBox #fourthBoxContent{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    .fourthBox #fourthBoxImg{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.team {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    background: radial-gradient(#281c3e, #0f051d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team-content {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.team-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.center h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.box {
+    padding: 16px;
+    background: #1b1229;
+    border-radius: 15px;
+    transition: all .38s ease;
+}
+
+.box h3 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.box h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #b7b4bb;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.icons i {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: all .38s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+
+    *{
+        transition: .5s linear;
+    }
+    .heading{
+        font-size: 50px;
+    }
+    .info{
+        font-size: 18px;
+    }
+
+    .firstBox{
+        height: 850px;
+    }
+
+    .secondBox{
+        height: 1150px;
+    }
+
+    .thirdBox{
+        height: 1000px;
+    }
+
+    .fourthBox{
+        height: 1000px;
+    }
+}
+
+@media (max-width: 447px){
+    *{
+        transition: .5s linear;
+    }
+
+    .firstBox{
+        height: 800px;
+    }
+
+    .secondBox{
+        height: 900px;
+    }
+
+    .thirdBox{
+        height: 900px;
+    }
+
+    .fourthBox{
+        height: 800px;
+    }
+
+    .heading{
+        font-size: 37px;
+    }
+
+
+    .info{
+        font-size: 15px;
+    }
+
+    .secondBox .info{
+        font-size: 15px;
+    }
+}

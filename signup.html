@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a672996df6.js" crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
+
+    
+</head>
+<body>
+
+        <div class="sign-up">
+            <form action="/" method="post" id="form" onsubmit="return validateForm()">
+                <p class="heading">SIGN UP</p>
+
+                <div class="input-field">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Enter your name: " id="name" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id: " id="email" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fa fa-regular fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter your password" id="password" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-regular fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Re-enter your password: " id="password1" required>
+                </div>
+
+                <button type="submit">Join Us!</button>
+            </form>
+        </div>          
+    <script src="signup.js"></script>
+</body>
+</html>
