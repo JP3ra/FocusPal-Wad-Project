@@ -572,7 +572,63 @@ span{
     .fourthBox{
         height: 1000px;
     }
+
+    .team{
+        display: flex;
+        flex-direction: row;
+    }
 }
+
+
+/* Footer CSS */
+
+.footer{
+    background-color: #0B0c10;
+    color: white;
+    height: 28em;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .companyName{
+    width: 50%;
+    background-color: #281c3e;
+}
+
+.footer .contactUs{
+    width: 50%;
+    background-color: #b7b4bb;
+    text-align: center;
+}
+
+.footer .contactUs form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+
+}
+
+.footer .contactUs form input{
+    height: 40px;
+    border: none;
+    border-radius: 10px ;
+    padding-left: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.footer .contactUs form textarea{
+    margin-top: 15px;
+    width: 110%;
+    border-radius: 10px;
+}
+
+span{
+    color: #66fcf1;
+}
+
+
 
 @media (max-width: 447px){
     *{
