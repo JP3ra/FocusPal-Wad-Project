@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.min.css" integrity="sha512-qcQ7uN9Tta289q3/6Bgp+5EwfCG6AwJerkQjCpabmnF4VYRAF8+oEshf3wxo+ObDQyHLcXqrFTcujCEs5lCLPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <h1>To-Do List</h1>
+	<input type="text" id="taskInput" placeholder="Enter task...">
+	<button onclick="addTask()">Add Task</button>
+	<ul id="taskList">
+	</ul> -->
+
+    <div class="container">
+        <h1>To-Do List</h1>
+        <i class="ri-task-line" style="font-size: 30px; color: lightgreen;"></i>
+        <form>
+            <input type="text" id="taskInput" placeholder="Enter task...">
+            <button type="button" onclick="addTask()" id="taskButton">Add</button>
+        </form>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="/static/js/todolist.js"></script>
+</body>
+
+</html>

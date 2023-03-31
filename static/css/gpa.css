@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #12141c;
+    color: lightgreen;
+
+}
+
+h1 {
+    color: lightgreen;
+    text-align: center;
+}
+
+form {
+    color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#0B0c10;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.details{
+    margin-bottom: 10px;
+}
+
+.details label{
+    display: absolute;
+    left: 0;
+}
+
+
+.details input{
+    color: white;
+    width: 98%;
+    border-radius: 7px;
+    height: 3em;
+    padding-left: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+tr{
+    padding: 20px;
+}
+.courseList{
+    color: white;
+    font-size: 30px;
+}
+.button{
+    background-color: lightgreen;
+    width: 120px;
+    border-radius: 20px;
+}
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2E8B57;
+}
+
+
+.table{
+    width: 50%;
+    margin: auto;
+}
+
+.finalGpa{
+    text-align: center;
+}

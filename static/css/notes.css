@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #12141c;
+    color: lightgreen;
+    overflow-x: hidden;
+
+}
+
+
+#url{
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+::placeholder{
+    color: white;
+}
+
+#video-url{
+    margin-top: 20px;
+    width: 750px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color:#0B0c10;
+    border: 2px solid #0B0c10;
+    color: white;
+}
+
+
+.clickVideo{
+    width: 100px;
+    border-radius: 20px;
+    background-color: lightgreen;
+    padding: 5px 5px;
+    color: #0B0c10;
+}
+
+.notes-container h2{
+    font-size: 40px;
+    color: white;
+}
+
+#notes{
+    font-size: 20px;
+    font-weight: 200;
+}
+#video-container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .notes-container {
+    margin: 20px;
+  }
+
+  #notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: auto;
+  }
+
+  #save-button {
+    padding: 5px 10px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: lightgreen;
+    margin-top: 20px;
+    transition: .5s;
+  }
+
+  #save-button:hover {
+    padding: 5px 10px;
+    width: 120px;
+    border-radius: 20px;
+    background-color:white;
+    transition: .5s all ease;
+    margin-top: 20px;
+  }
+
+@media (max-width: 900px){
+    #video-url{
+        width: 500px;
+    }
+    .clickVideo{
+        width: 83px;
+    }
+}
+
+@media (max-width: 590px){
+    #video-url{
+        width: 375px;
+    }
+
+    .clickVideo{
+        width: 78px;
+    }
+}
+
+@media (max-width: 400px){
+    #video-url{
+        width: 280px;
+    }
+    .clickVideo{
+        width: 60px;
+    }
+}

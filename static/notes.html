@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>YouTube Video Player</title>
+  <link rel="stylesheet" href="/static/css/notes.css">
+</head>
+
+<body>
+
+
+  <label for="video-url" id="url">Enter YouTube Video URL:</label>
+  <input type="text" id="video-url" name="video-url" placeholder="https://www.youtube.com/watch?v=...">
+  <button onclick="playVideo()" class="clickVideo">Play Video</button>
+
+  <div id="video-container"></div>
+
+  <div class="notes-container">
+    <h2>Notes</h2>
+    <ul id="notes-list">
+    </ul>
+    <form>
+      <label for="note-input" id="notes">Add a Note:</label>
+      <textarea id="notes" name="notes" placeholder="Take down your notes"></textarea>
+
+    </form>
+    <button id="save-button" onclick="saveNotes()">Save Notes</button>
+  </div>
+  </div>
+  <script>
+    function playVideo() {
+      var videoUrl = document.getElementById("video-url").value;
+      var videoId = extractVideoId(videoUrl);
+
+      if (videoId) {
+        var videoPlayer = '<iframe width="700" height="315" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>';
+        document.getElementById("video-container").innerHTML = videoPlayer;
+        document.getElementById("notes").disabled = false;
+      } else {
+        alert("Please enter a valid YouTube video URL");
+      }
+    }
+
+    function extractVideoId(videoUrl) {
+      var regex = /(?:https?:\/\/(?:www\.)?youtube\.com\/watch\?v=|https?:\/\/youtu\.be\/)([^#\&\?]{11})/;
+      var match = videoUrl.match(regex);
+      return match ? match[1] : false;
+    }
+
+    function saveNotes() {
+      // Get the notes from the text area
+      var notes = document.getElementById("notes").value;
+
+      // Create a new Blob object with the notes
+      var blob = new Blob([notes], { type: "text/plain;charset=utf-8" });
+
+      // Create a new anchor element
+      var anchor = document.createElement("a");
+
+      // Set the href attribute of the anchor element to the URL of the Blob object
+      anchor.href = window.URL.createObjectURL(blob);
+
+      // Set the download attribute of the anchor element to the filename of the notepad file
+      anchor.download = "notepad.txt";
+
+      // Click the anchor element to download the notepad file
+      anchor.click();
+    }
+
+
+  </script>
+
+</body>
+
+</html>

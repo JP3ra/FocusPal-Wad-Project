@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="/static/css/gpa.css">
+
+</head>
+
+<body>
+    <h1>GPA Calculator</h1>
+    <form>
+        <label for="course">Course Name:</label>
+        <select id="course" name="course">
+            <option value=""></option>
+            <option value="1">Engineering Mathematics</option>
+            <option value="2">Digital Logic Design</option>
+            <option value="3">Computer Organisation and Architecture</option>
+            <option value="4">Data Structure</option>
+            <option value="5">Object Oriented Programming</option>
+            <option value="6">Web Application Development</option>
+            <option value="7">Competitive Programming -1</option>
+            <option value="8"> Environmental Studies</option>
+            <option value="9"> Constitution of India, Professional Ethics 
+and Human Rights</option>
+            
+        </select>
+
+        <label for="credits">Credits:</label>
+        <select id="credits" name="credits">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <label for="grade">Grade:</label>
+        <select id="grade" name="grade">
+            <option value=""></option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">C</option>
+            <option value="5">D</option>
+            <option value="4">P</option>
+            <option value="0">F</option>
+        </select>
+
+        <input type="button" value="Add Course" class="button" onclick="addCourse()">
+        <input type="submit" value="Calculate GPA">
+    </form>
+
+    <h2 class="courseList">
+        <center>Course List:</center>
+    </h2>
+
+    <div class="table">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Credits</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="courseList">
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="finalGpa">GPA: <span id="gpa"></span></h2>
+    <script src="/static/js/gpa.js"></script>
+</body>
+
+</html>
