@@ -236,6 +236,7 @@ span {
     flex-direction: column;
 }
 
+
 .team-content {
     width: 100%;
     max-width: 1350px;
@@ -487,6 +488,18 @@ form button:hover{
     .left {
         height: 200px;
     }
+
+    .footer .container .contact-box .left img{
+        margin-top: -170px;
+    }
+
+    .footer .container .contact-box .right{
+        margin-top: 100px;
+    }
+
+    .footer .container .contact-box .right input{
+        width: 400px;
+    }
 }
 
 
@@ -552,7 +565,7 @@ form button:hover{
 @media (max-width: 696px) {
     .heading1 {
         margin-top: 55px;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .home {
@@ -567,12 +580,20 @@ form button:hover{
         width: 100%;
     }
 
+    .heading1{
+        font-size: 30px;
+    }
+
     .tools-content{
         width: 400px;
     }
 }
 
 @media (max-width: 455px){
+
+    .heading1{
+        font-size: 25px;
+    }
     .tools-content{
         display: flex;
 
@@ -584,4 +605,31 @@ form button:hover{
     .main-text h4{
         font-size: 11px;
     }
+    .footer .container .contact-box .left img{
+        width: 400px;
+    }
+
+    .footer .container .contact-box .right input{
+        width: 250px;
+    }
+
+    .footer .container .contact-box .right h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px){
+    .home{
+        height: 70vh;
+        width: 100%;
+    }
+    .heading1{
+        font-size: 18px;
+    }
+
+    .btn{
+        width: 160px;
+    }
+
+
 }
