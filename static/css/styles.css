@@ -229,7 +229,7 @@ span {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #0f051d;
+    background: #0B0c10;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,7 +264,8 @@ span {
 }
 
 .box {
-    width: 100%;
+    margin: auto;
+    width: 400px;
     padding: 16px;
     background: #12141c;
     border-radius: 15px;
@@ -306,7 +307,7 @@ span {
 /* Contact Us CSS */
 
 .footer {
-    background-color: #0f051d;
+    background-color: #0B0c10;
     width: 100%;
 }
 
@@ -330,8 +331,7 @@ span {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #0f051d;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    background-color:#0B0c10;
 }
 
 form{
@@ -602,6 +602,9 @@ form button:hover{
         width: 350px;
     }
 
+    .box{
+        width: 350px;
+    }
     .main-text h4{
         font-size: 11px;
     }
