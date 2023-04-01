@@ -38,10 +38,10 @@
         <i class="fas fa-bars" id="ham-menu"></i>
 
         <ul class="navbar" id="navbar">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#tools" class="nav-link">Tools</a></li>
             <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
         </ul>
     </header>
 
@@ -86,7 +86,7 @@
                     <img src="/static/images/accountant_online_3-removebg-preview.png" alt="">
                     <div class="main-row">
                         <div class="row-text">
-                            <a href="/expenses">
+                            <a href="/expenses" target="_blank">
                                 <p>Expense Manager</p>
                             </a>
 
@@ -124,7 +124,7 @@
                     <img src="/static/images/3048234-removebg-preview.png" alt="">
                     <div class="main-row">
                         <div class="row-text">
-                            <a href="/notes">
+                            <a href="/notes" target="_blank">
                                 <p>NoteAce</p>
                             </a>
 
@@ -192,15 +192,16 @@
         <div class="container">
             <div class="contact-box">
                 <div class="left">
-
+                    <img src="images/5124556-removebg-preview.png" alt="">
                 </div>
                 <div class="right">
-                    <h2>Contact Us</h2>
-                    <input type="text" class="field" placeholder="Your Name">
-                    <input type="text" class="field" placeholder="Your Email">
-                    <input type="text" class="field" placeholder="Phone">
-                    <textarea placeholder="Message" class="field"></textarea>
-                    <button class="btn">Send</button>
+                    <h1>Contact Us</h1>
+                    <form action="https://formsubmit.co/jyotiprakash2409@gmail.com" method="POST">
+                        <input type="text" name="Name" placeholder="Enter your name: " required>
+                        <input type="email" name="Email" placeholder="Enter your email: "required>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button>Send</button>
+                    </form>
                 </div>
             </div>
         </div>
