@@ -28,7 +28,7 @@ function addCourse() {
     gradeCell.innerHTML = courseGrade;
 
     course.value = "";
-    credits.value = 1;
+    credits.value = "";
     grade.value = "4.0";
 }
 
