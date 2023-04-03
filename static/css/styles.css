@@ -605,7 +605,7 @@ form button:hover{
         width: 350px;
     }
     .main-text h4{
-        font-size: 11px;
+        font-size: 15px;
     }
     .footer .container .contact-box .left img{
         width: 400px;
@@ -621,9 +621,14 @@ form button:hover{
 }
 
 @media (max-width: 400px){
+    body{
+        text-align: center;
+    }
     .home{
         height: 70vh;
-        width: 100%;
+        width: 375px;
+        background-image: none;
+        background-color: #0B0c10;
     }
     .heading1{
         font-size: 18px;
@@ -631,6 +636,16 @@ form button:hover{
 
     .btn{
         width: 160px;
+    }
+
+    .main-text h4{
+        font-size: 15px;
+    }
+    .footer .container .contact-box .right input{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
