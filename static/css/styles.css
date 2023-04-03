@@ -503,7 +503,6 @@ form button:hover{
 }
 
 
-
 @media (max-width: 830px) {
     .heading1 {
         font-size: 40px;
@@ -519,7 +518,7 @@ form button:hover{
         font-size: 20px;
     }
 
-
+/* 
     nav ul {
         background-color: black;
         position: fixed;
@@ -533,30 +532,30 @@ form button:hover{
         justify-content: space-around;
         transition: 1s;
         gap: 0;
-    }
+    }*/
 
     .navbar {
         position: absolute;
         top: 100%;
         right: 0;
         left: 0;
-        display: flex;
-        flex-direction: column;
-        background: #0B0c10;
-        text-align: center;
+        display:none ;
         transition: all .40s ease;
     }
 
-    .navbar a {
+    /* .navbar a {
         display: block;
         padding: 1rem;
         margin: 1rem;
-    }
+    } */ */
 
     /* .navbar.active {
         top: 100%;
     } */
 
+    ul{
+        visibility: hidden;
+    }
 
 
 
